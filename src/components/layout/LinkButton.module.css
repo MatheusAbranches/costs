@@ -3,8 +3,10 @@
     color: #fff;
     padding: 0.5em 1em;
     border-radius: 4px;
-    text-emphasis: none;
+    text-decoration: none;
+    font-weight: bold;
     transition: .3s;
+
 }
 .btn:hover {
     color: #FFBB33;
