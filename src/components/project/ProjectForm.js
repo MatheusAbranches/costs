@@ -26,7 +26,6 @@ const ProjectForm = ({ handleSubmit, projectData, btnText }) => {
   const submit = (e) => {
     e.preventDefault();
     handleSubmit(project);
-    
   };
 
   function handleChange(e) {
@@ -51,9 +50,11 @@ const ProjectForm = ({ handleSubmit, projectData, btnText }) => {
         text="Nome do projeto"
         name="name"
         placeholder="Insira o nome do projeto"
+        handleOnChange={handleChange}
         // value={project.name ? project.name : ""}
       />
       <Input
+        min={1}
         type="number"
         text="Orçamento do projeto"
         name="budget"

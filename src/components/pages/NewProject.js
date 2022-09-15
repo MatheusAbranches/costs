@@ -12,6 +12,8 @@ const NewProject = () => {
     project.cost = 0;
     project.services = [];
 
+    console.log(project);
+
     fetch("http://localhost:5000/projects", {
       method: "POST",
       headers: {
