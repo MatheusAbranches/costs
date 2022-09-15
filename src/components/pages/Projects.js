@@ -42,7 +42,7 @@ const Projects = () => {
       },
     })
       .then((resp) => resp.json())
-      .then((data) => {
+      .then(() => {
         setProjects(projects.filter(((project) => project.id !== id)));
         setProjectMessage('Projeto removido com sucesso!')
       })
@@ -60,8 +60,8 @@ const Projects = () => {
         <h1>Meus Projetos</h1>
         <LinkButton to="/newproject" text="Criar Projeto" />
       </div>
-      { <Message type="success" msg={message} />}
-      { <Message type="success" msg={projectMessage} />}
+      {message && <Message type="success" msg={message} />}
+      {projectMessage && <Message type="success" msg={projectMessage} />}
       <Container customClass="start">
         {projects.length > 0 &&
           projects.map((project) => (
