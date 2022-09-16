@@ -2,17 +2,6 @@
   "projects": [
     {
       "name": "teste",
-      "budget": "654987",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 1
-    },
-    {
-      "name": "teste",
       "budget": "665",
       "category": {
         "id": "1",
@@ -32,6 +21,28 @@
       "cost": 0,
       "services": [],
       "id": 3
+    },
+    {
+      "name": "Capa de chuva",
+      "budget": "414",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
+    },
+    {
+      "name": "Capa de chuva",
+      "budget": "655",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 5
     }
   ],
   "categories": [
