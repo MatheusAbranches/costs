@@ -32,17 +32,6 @@
       "cost": 0,
       "services": [],
       "id": 4
-    },
-    {
-      "name": "Capa de chuva",
-      "budget": "655",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 5
     }
   ],
   "categories": [
