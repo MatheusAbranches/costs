@@ -18,7 +18,7 @@ const Projects = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      fetch("http://localhost:5000/projects", {
+      fetch("https://managecosts.herokuapp.com/projects", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -35,7 +35,7 @@ const Projects = () => {
   }, []);
 
   function removeProject(id) {
-    fetch(`http://localhost:5000/projects/${id}`, {
+    fetch(`https://managecosts.herokuapp.com/projects/${id}`, {
       method: "DELETE",
       headers: {
         "content-type": "application/json",

@@ -18,7 +18,7 @@ const Project = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      fetch(`http://localhost:5000/projects/${id}`, {
+      fetch(`https://managecosts.herokuapp.com/projects/${id}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -41,17 +41,16 @@ const Project = () => {
       return false;
     }
 
-    fetch(`http://localhost:5000/projects/${project.id}`, {
-      method: "PATCH",
+    fetch(`https://managecosts.herokuapp.com/projects/${project.id}`, {
+      method: "PUT",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(project),
     })
       .then((resp) => resp.json())
-      .then((data) => {
-        setProject(data);
-        setShowProjectForm(false);
+      .then(() => {
+        window.location = "/projects"
         setMessage("projeto atualizado!");
       setType("success");
       })

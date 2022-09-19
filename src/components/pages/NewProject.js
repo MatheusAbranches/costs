@@ -14,7 +14,7 @@ const NewProject = () => {
 
     console.log(project);
 
-    fetch("http://localhost:5000/projects", {
+    fetch("https://managecosts.herokuapp.com/projects", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

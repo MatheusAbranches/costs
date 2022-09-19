@@ -10,7 +10,7 @@ const ProjectForm = ({ handleSubmit, projectData, btnText }) => {
   const [project, setProject] = useState(projectData || {});
 
   useEffect(() => {
-    fetch("http://localhost:5000/categories", {
+    fetch("https://managecosts.herokuapp.com/categories", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

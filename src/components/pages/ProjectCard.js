@@ -17,8 +17,8 @@ const ProjectCard = ({ id, name, budget, category, handleRemove }) => {
         <span>Orçamento: R$:{budget}</span>
       </p>
       <p className={styles.category_text}>
-        <span className={`${styles[category.name.toLowerCase()]}`}></span>
-        {category.name}
+        <span className={`${styles[category && category.name ?category.name.toLowerCase() : ""]}`}></span>
+        {category && category.name ? category.name : ""} 
       </p>
       <div className={styles.project_card_actions}>
         <Link to={`/project/${id}`}>
